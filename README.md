@@ -1,4 +1,4 @@
-# ✅ My Tasks – Personal Task Manager App
+# 📋 My Tasks – Personal Task Manager App
 
 ## 🚀 Project Overview
 
@@ -18,9 +18,11 @@
 
 - 🗂️ **View Tasks**
   - Display all tasks in a modern, scrollable list
+  -  Set due dates and priorities (High, Medium, Low)
 
 - 🧠 **MVVM Structure**
   - Maintainable and scalable codebase
+  - Clean, user-friendly dark UI with emoji-enhanced visual cues
 
 - ✏️ **Edit Task**
   - Easily update any task’s title or details.
