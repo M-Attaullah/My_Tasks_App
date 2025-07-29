@@ -61,8 +61,6 @@
 |------------------|------------------|------------------|
 | ![Task List](screenshots/task_list.png) | ![Add Task](screenshots/add_task.png) | ![Edit Task](screenshots/edit_task.png) |
 
-> 💡 Place your screenshots in a /screenshots folder in your GitHub repository.
-
 ---
 
 ## 📝 How to Run
