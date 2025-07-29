@@ -8,36 +8,36 @@
 
 ## 🌟 Features
 
-- 📝 *Add Task*
+- 📝 Add Task
   - Create tasks with title and optional description.
   - Stored locally using Sqflite.
 
-- 📋 *Task List*
+- 📋 Task List
   - All tasks displayed in a scrollable, clean interface.
   - Completed tasks appear with checkmarks.
 
-- 🗂 *View Tasks*
+- 🗂 View Tasks
   - Display all tasks in a modern, scrollable list
   -  Set due dates and priorities (High, Medium, Low)
 
-- 🧠 *MVVM Structure*
+- 🧠 MVVM Structure
   - Maintainable and scalable codebase
   - Clean, user-friendly dark UI with emoji-enhanced visual cues
 
-- ✏ *Edit Task*
+- ✏ Edit Task
   - Easily update any task’s title or details.
 
-- ❌ *Delete Task*
+- ❌ Delete Task
   - Swipe or tap to delete tasks.
 
-- ✅ *Task Status*
+- ✅ Task Status
   - Mark tasks as completed with a single tap.
 
-- 🎨 *Polished UI*
+- 🎨 Polished UI
   - Beautiful purple/indigo gradient theme.
   - Modern typography and spacing.
 
-- 💾 *Offline Support*
+- 💾 Offline Support
   - Store tasks locally with Sqflite 
 
 ---
