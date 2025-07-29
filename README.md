@@ -2,7 +2,7 @@
 
 ## 🚀 Project Overview
 
-*My Tasks* is a simple and efficient personal task manager built using *Flutter* and *Dart. The app allows users to add, view, update, and delete tasks using a beautiful and responsive interface. It uses **Provider* for state management and *Sqflite* for local storage, ensuring a fast, offline-first experience. Designed with clean UI, modern color schemes, and full CRUD functionality.
+*My Tasks* is a simple and efficient personal task manager built using *Flutter* and *Dart*. The app allows users to add, view, update, and delete tasks using a beautiful and responsive interface. It uses **Provider* for state management and *Sqflite* for local storage, ensuring a fast, offline-first experience. Designed with clean UI, modern color schemes, and full CRUD functionality.
 
 ---
 
