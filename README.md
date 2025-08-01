@@ -38,8 +38,11 @@
   - Modern typography and spacing.
 
 - 💾 Offline Support
-  - Store tasks locally with Sqflite 
-
+  - Store tasks locally with Sqflite
+    
+- 🌗 Display Settings
+  - Light/Dark mode toggle feature.
+    
 ---
 
 ## 💻 Tech Stack
@@ -57,9 +60,9 @@
 
 ## 📸 Screenshots
 
-| 📋 Task List Screen | ➕ Add Task Screen | ✏ Edit Task Screen |
-|------------------|------------------|------------------|
-| ![Task List](screenshots/task_list.png) | ![Add Task](screenshots/add_task.png) | ![Edit Task](screenshots/edit_task.png) |
+| 📋 Task List Screen | ➕ Add Task Screen | ✏ Edit Task Screen |🗑️ Delete Task Screen |
+|------------------|------------------|------------------|------------------|
+| ![Task List](screenshots/task_list.png) | ![Add Task](screenshots/add_task.png) | ![Edit Task](screenshots/edit_task.png) |![Delete Task](screenshots/delete_task.png) |
 
 ---
 
@@ -76,8 +79,7 @@
 
 - ⏰ Add deadline and reminders
 - 🔔 Implement notification reminders.
-- ☁Firebase or cloud sync support.
-- 🌗 Light/Dark mode toggle feature.
+- ☁  Firebase or cloud sync support.
 - 📊 Add productivity insights & analytics.
 - 🗂 Task filtering by priority or date.
 
