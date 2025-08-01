@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../models/task.dart';
 import '../providers/task_provider.dart';
+import '../providers/theme_provider.dart';
 import '../widgets/task_card.dart';
 import 'add_edit_task_screen.dart';
 
@@ -65,6 +66,18 @@ class _TaskListScreenState extends State<TaskListScreen> {
           ],
         ),
         actions: [
+          IconButton(
+            icon: Icon(
+              Provider.of<ThemeProvider>(context).themeMode == ThemeMode.dark
+                  ? Icons.light_mode_rounded
+                  : Icons.dark_mode_rounded,
+              color: colorScheme.onPrimaryContainer,
+            ),
+            onPressed: () {
+              Provider.of<ThemeProvider>(context, listen: false).toggleTheme();
+            },
+            tooltip: 'Toggle theme',
+          ),
           Container(
             margin: const EdgeInsets.only(right: 8),
             decoration: BoxDecoration(

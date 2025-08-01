@@ -418,6 +418,9 @@ class _AddEditTaskScreenState extends State<AddEditTaskScreen> {
           labelStyle: TextStyle(color: colorScheme.onSurfaceVariant),
           hintStyle:
               TextStyle(color: colorScheme.onSurfaceVariant.withAlpha(60)),
+          errorBorder: InputBorder.none, // Added to remove red error line
+          focusedErrorBorder:
+              InputBorder.none, // Added to remove red error line
         ),
       ),
     );
@@ -486,22 +489,37 @@ class _AddEditTaskScreenState extends State<AddEditTaskScreen> {
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         child: DropdownButtonFormField<TaskPriority>(
           value: _priority,
+          isExpanded: true, // Added to prevent overflow
           decoration: InputDecoration(
             labelText: 'Priority',
             prefixIcon: Icon(Icons.flag_rounded, color: colorScheme.primary),
             border: InputBorder.none,
             contentPadding: const EdgeInsets.symmetric(vertical: 8),
+            errorBorder: InputBorder.none, // Added to remove red error line
+            focusedErrorBorder:
+                InputBorder.none, // Added to remove red error line
           ),
           items: TaskPriority.values.map((p) {
             final data = _getPriorityData(p);
             return DropdownMenuItem(
               value: p,
-              child: Row(
-                children: [
-                  Text(data['emoji']!, style: const TextStyle(fontSize: 16)),
-                  const SizedBox(width: 8),
-                  Text(data['label']!),
-                ],
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(
+                  minWidth: 120, // Added to prevent overflow
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(data['emoji']!, style: const TextStyle(fontSize: 16)),
+                    const SizedBox(width: 8),
+                    Flexible(
+                      child: Text(
+                        data['label']!,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             );
           }).toList(),
